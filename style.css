@@ -47,10 +47,33 @@ h3{
     color: green; 
 }
 
-button{
+#submit{
     margin: 0 40% 0 40%;
     padding: 5px;
     background-color: green;
     color: white;
     border-radius: 5px;
+}
+
+/**********************************************************/
+.notecontainer{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.divnote1{
+    background-color:yellowgreen;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+
+.view-detail{
+    margin: 0 40% 0 40%;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    background-color: lightblue
 }

@@ -14,8 +14,6 @@ body{
     align-items: center;
     font-family: sans-serif;
     min-height: 100vh;
-/*  à ajouter par js lors de l'appuie sur le bouton views details
-    background-color: rgba(0,0,0,0.3); */
 }
 
 .container{
@@ -33,12 +31,9 @@ body{
 }
 
 textarea{
-    flex: 1;
+    flex: 1; 
     resize: none;
     border-radius: 8px;
-
-    /*  à ajouter par js lors de l'appuie sur le bouton views details
-    background-color: rgba(0,0,0,0.3); */
 }
 
 h1,
@@ -71,12 +66,12 @@ button{
 
 /****************************************************************************
 
-                                    to add with javascript
+                           to add with javascript
 
 **************************  *************************************************/
 
 .divnote{
-    background-color: yellowgreen;  /* en enlever */
+    background-color: yellowgreen;  /* ?? */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -108,30 +103,30 @@ h4{
     margin-top: 5px;
 }
 
-
 .modal{
-    background-color: red; /* à enlever */
-  /*  background-color: white; */
+    background-color: white;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     border-radius: 5px;
     border: 1px solid black;
+    box-sizing: border-box;
     position: absolute;
-    bottom: 50%;
-    max-width: 800px;
+    bottom: 50%; 
+    width: 800px; 
 
-    opacity: 0;
-    pointer-events:none;
+    opacity: 1;
+}
+
+.paragraph-modal{
+    max-width: 800px;
+    overflow-wrap: break-word;
+    font-size: 15px;
 }
 
 .close{
     margin: 0 40% 0px 40%;
     border-radius: 5px;
     background-color: lightblue
-}
-
-.active{
-    opacity: 1;
 }
